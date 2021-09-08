@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import 'semantic-ui-css/semantic.min.css';
+import Home from './screens/home/home';
+import Navbar from './components/navbar/navbar';
+import Card from './components/card/card';
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Home />
+    <Navbar></Navbar>
+    <Card></Card>
   </React.StrictMode>,
   document.getElementById('root')
 );
